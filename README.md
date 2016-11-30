@@ -1,5 +1,5 @@
 # FlexTable (Beta)
-HTML5 table using Flexbox
+HTML5 table using Flexbox. 
 
 ## Why FlexTable?
 
