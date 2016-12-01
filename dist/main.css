@@ -3,49 +3,74 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid #c7c7c7;
+}
+.flexTable--header,
+.flexTable--body,
+.flexTable--body-fixed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.flexTable thead th {
-  background-color: #a7a7a7;
-  border: 1px solid #a7a7a7;
-  box-sizing: border-box;
-  padding: 6px 0;
-}
-.flexTable thead {
+.flexTable--row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
 }
-.flexTable tbody {
-  -webkit-box-flex: 100%;
-      -ms-flex: 100%;
-          flex: 100%;
-  max-height: 200px;
-  overflow-y: scroll;
-}
-.flexTable tr {
+.flexTable--header span,
+.flexTable--body span,
+.flexTable--body-fixed span {
+  padding: 5px;
+  border-left: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.flexTable th {
+.flexTable--header span {
+  font-weight: bold;
+  padding: 10px 5px;
+}
+.flexTable--fixed span:first-child {
+  border-left: 0;
+}
+.flexTable--body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-.flexTable td {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 100%;
-          flex: 0 1 100%;
-  box-sizing: border-box;
-  border: 1px solid #000;
-  padding: 0;
-  text-align: center;
+.flexTable--body-fixed[data-max-height='3'] {
+  max-height: 300px;
+  overflow-y: scroll;
+  overflow-y: overlay;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+@-moz-document url-prefix() {
+  .flexTable--header-fixed {
+    overflow-y: scroll;
+  }
 }
