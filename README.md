@@ -3,7 +3,7 @@ HTML5 table using Flexbox.
 
 ## Why FlexTable?
 
-FlexTable uses [FlexBox] (https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background) to create modern & painless tables. Don't believe me? Try creating a table with locked headers and a scrollbar. It can be a major pain if you're using a library like AngularJS or React and the amount of headers is dynamic. 
+FlexTable uses [FlexBox] (https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background) to create modern & painless tables. Don't believe me? Try creating a table with locked headers and a scrollbar. There are multiple ways to do it, [see here](http://stackoverflow.com/questions/19559197/how-to-make-scrollable-table-with-fixed-headers-using-css) but they are a bit strange. With FlexTable, you can avoid setting min or max widths and let FlexBox do the heavy lifting.
 
 ## Show Me a Demo
 
