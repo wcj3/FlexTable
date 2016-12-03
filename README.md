@@ -8,3 +8,7 @@ FlexTable uses [FlexBox] (https://css-tricks.com/snippets/css/a-guide-to-flexbox
 ## Show Me a Demo
 
 http://codepen.io/wcj3/pen/yVzpGp
+
+## Install
+
+NPM package coming soon!
