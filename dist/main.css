@@ -11,6 +11,7 @@
   border-left: 1px solid rgba(68,65,66,0.89);
   border-right: 1px solid rgba(68,65,66,0.89);
   border-bottom: 1px solid rgba(68,65,66,0.89);
+  background-color: #f9f8f5;
 }
 .flexTable--header,
 .flexTable--body,
@@ -89,11 +90,10 @@
           justify-content: center;
 }
 @-moz-document url-prefix() {
-  .flexTable--header-fixed {
-    overflow-y: scroll;
+  .flexTable--header-fixed .flexTable--row .flexTable--cell:last-of-type {
+    margin-right: 17px;
   }
 }
-flexTable fixed headers s,
 .flexTable--body-fixed[data-max-height='3'] {
   max-height: 300px;
   overflow-y: scroll;
