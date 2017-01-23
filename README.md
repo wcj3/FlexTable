@@ -1,5 +1,5 @@
 # FlexTable 
-A cross-browser + platform, responsive, lightweight solution to create tables using Flexbox. 
+A cross-browser + platform, responsive solution to creating modern tables using Flexbox. 
 
 ## Why FlexTable?
 
