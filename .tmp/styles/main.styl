@@ -27,8 +27,8 @@ border-radius = 7px 7px
 .flextable--cell
     display: flex
     flex: 1 1
-    overflow-x: hidden
     font-family: Tahoma, Arial, Helvetica;
+    overflow-x: scroll
 .flextable--body .flextable--cell
     border-right: 1px solid cell-border
     border-bottom: 1px solid cell-border
@@ -38,10 +38,12 @@ border-radius = 7px 7px
     -webkit-text-size-adjust: none
 .flextable--body .flextable--cell:last-of-type
     border-right: none
+.flextable--body .flextable--row:last-of-type .flextable--cell
+    border-bottom: none
 .flextable--row
     display: flex
     flex: 100%
-    overflow: scroll
+    overflow: hidden
 .flextable--header .flextable--cell
     color: white
     font-weight: bold
@@ -52,8 +54,6 @@ border-radius = 7px 7px
 .flextable--data
     white-space: nowrap
     padding: 10px
-    overflow-x: scroll
-
 /*Helper Styling*/
 
 //Centers horizontally and vertically
@@ -75,16 +75,19 @@ border-radius = 7px 7px
     -ms-overflow-style: -ms-autohiding-scrollbar !important
 .flextable--body-fixed[data-max-height='4']
     max-height: 400px
+    -webkit-overflow-scrolling: touch
     overflow-y: scroll !important
     overflow-y: overlay !important
     -ms-overflow-style: -ms-autohiding-scrollbar !important
 .flextable--body-fixed[data-max-height='5']
     max-height: 500px
+    -webkit-overflow-scrolling: touch
     overflow-y: scroll !important
     overflow-y: overlay !important
     -ms-overflow-style: -ms-autohiding-scrollbar !important
 .flextable--body-fixed[data-max-height='6']
     max-height: 600px
+    -webkit-overflow-scrolling: touch
     overflow-y: scroll !important
     overflow-y: overlay !important
     -ms-overflow-style: -ms-autohiding-scrollbar !important

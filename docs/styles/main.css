@@ -51,8 +51,8 @@
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
           flex: 1 1;
-  overflow-x: hidden;
   font-family: Tahoma, Arial, Helvetica;
+  overflow-x: scroll;
 }
 .flextable--body .flextable--cell {
   border-right: 1px solid rgba(68,65,66,0.89);
@@ -69,6 +69,9 @@
 .flextable--body .flextable--cell:last-of-type {
   border-right: none;
 }
+.flextable--body .flextable--row:last-of-type .flextable--cell {
+  border-bottom: none;
+}
 .flextable--row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,7 +79,7 @@
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
-  overflow: scroll;
+  overflow: hidden;
 }
 .flextable--header .flextable--cell {
   color: #fff;
@@ -89,7 +92,6 @@
 .flextable--data {
   white-space: nowrap;
   padding: 10px;
-  overflow-x: scroll;
 }
 /*Helper Styling*/
 .flextable--cell-center {
@@ -114,18 +116,21 @@
 }
 .flextable--body-fixed[data-max-height='4'] {
   max-height: 400px;
+  -webkit-overflow-scrolling: touch;
   overflow-y: scroll !important;
   overflow-y: overlay !important;
   -ms-overflow-style: -ms-autohiding-scrollbar !important;
 }
 .flextable--body-fixed[data-max-height='5'] {
   max-height: 500px;
+  -webkit-overflow-scrolling: touch;
   overflow-y: scroll !important;
   overflow-y: overlay !important;
   -ms-overflow-style: -ms-autohiding-scrollbar !important;
 }
 .flextable--body-fixed[data-max-height='6'] {
   max-height: 600px;
+  -webkit-overflow-scrolling: touch;
   overflow-y: scroll !important;
   overflow-y: overlay !important;
   -ms-overflow-style: -ms-autohiding-scrollbar !important;
