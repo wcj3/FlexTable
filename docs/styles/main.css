@@ -107,27 +107,27 @@
 }
 .flextable--body-fixed[data-max-height='3'] {
   max-height: 300px;
-  overflow-y: scroll;
-  overflow-y: overlay;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-y: scroll !important;
+  overflow-y: overlay !important;
+  -ms-overflow-style: -ms-autohiding-scrollbar !important;
 }
 .flextable--body-fixed[data-max-height='4'] {
   max-height: 400px;
-  overflow-y: scroll;
-  overflow-y: overlay;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-y: scroll !important;
+  overflow-y: overlay !important;
+  -ms-overflow-style: -ms-autohiding-scrollbar !important;
 }
 .flextable--body-fixed[data-max-height='5'] {
   max-height: 500px;
-  overflow-y: scroll;
-  overflow-y: overlay;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-y: scroll !important;
+  overflow-y: overlay !important;
+  -ms-overflow-style: -ms-autohiding-scrollbar !important;
 }
 .flextable--body-fixed[data-max-height='6'] {
   max-height: 600px;
-  overflow-y: scroll;
-  overflow-y: overlay;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-y: scroll !important;
+  overflow-y: overlay !important;
+  -ms-overflow-style: -ms-autohiding-scrollbar !important;
 }
 .flextable--fixed .flextable--cell:first-child {
   border-left: 0;
