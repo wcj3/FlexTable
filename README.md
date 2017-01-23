@@ -15,8 +15,9 @@ npm install flextable
 
 ## How to use
 
-### Basic FlexTable
+#### FlexTable with fixed headers and scrollable body
 
+```
 <div class="flextable">
   <div class="flextable--header flextable--header-fixed">
     <div class="flextable--row">
@@ -50,5 +51,17 @@ npm install flextable
   </div>            
  </div>
 </div>
+```
+#### Setting max-height of body for fixed tables
+Note: Only 3-6 is currently supported
+
+.flextable--body-fixed[data-max-height='5']
+
+#### Select preset color
+Note: Only light-blue, red, & green are supported
+ ```
+ <div class="flextable" data-color="red">
+ ```
+
 
 
