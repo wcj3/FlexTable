@@ -1,13 +1,12 @@
 {
   "name": "flextable",
-  "description": "HTML5 Table Solution using FlexBox",
-  "main": [
-    "dist/main.min.css"
-  ],
+  "description": "A cross-browser + platform & responsive solution to creating modern tables using Flexbox",
   "keywords": [
     "flexgrid",
     "html5 table",
-    "flexbox"
+    "flexbox",
+    "library",
+    "css"
   ],
   "authors": [
     "Will Johnson <william.c.johnson92@gmail.com>"
