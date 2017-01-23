@@ -1,9 +1,9 @@
 # FlexTable (Beta)
-HTML5 table using Flexbox. 
+A lightweight solution to create tables using Flexbox. 
 
 ## Why FlexTable?
 
-FlexTable uses [FlexBox] (https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background) to create modern & painless tables. Don't believe me? Try creating a table with fixed headers and a scrollbar. There are multiple ways to do it [(see here)](http://stackoverflow.com/questions/19559197/how-to-make-scrollable-table-with-fixed-headers-using-css) but they are a bit strange. With FlexTable, you can avoid setting min or max widths and let FlexBox do the heavy lifting. This solution has been thoroughly tested and is currently used in production on a medium-sized corporate application.
+FlexTable uses [FlexBox] (https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background) to create modern & painless tables. Don't believe me? Try creating a table with fixed headers and a scrollbar. There are multiple ways to do it [(see here)](http://stackoverflow.com/questions/19559197/how-to-make-scrollable-table-with-fixed-headers-using-css) but they are a bit strange. With FlexTable, you can avoid setting min or max widths and let FlexBox do the heavy lifting. This solution has been thoroughly tested and is currently used in production on a medium-sized corporate application. And it's lightweight, currently tipping the scales at 2.91 kB.
 
 ## Show Me a Demo
 
