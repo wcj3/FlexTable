@@ -52,7 +52,7 @@
       -ms-flex: 1 1;
           flex: 1 1;
   font-family: Tahoma, Arial, Helvetica;
-  overflow-x: scroll;
+  overflow: hidden;
 }
 .flextable--body .flextable--cell {
   border-right: 1px solid rgba(68,65,66,0.89);
@@ -92,6 +92,8 @@
 .flextable--data {
   white-space: nowrap;
   padding: 10px;
+  overflow-x: auto;
+  width: 100%;
 }
 /*Helper Styling*/
 .flextable--cell-center {
