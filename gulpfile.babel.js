@@ -13,14 +13,14 @@ gulp.task('styles', () => {
     .pipe($.plumber())
     .pipe($.stylus())
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
-    .pipe(gulp.dest('app/styles'))
+    .pipe(gulp.dest('docs/styles'))
     .pipe(reload({stream: true}));
 });
 
 
 
 gulp.task('dist', ['dist-ugly'], () => {
-    return gulp.src('app/styles/main.css')
+    return gulp.src('docs/styles/main.css')
         .pipe($.plumber())
         .pipe($.cleanCss())
         .pipe($.rename((path)=> {
@@ -31,7 +31,7 @@ gulp.task('dist', ['dist-ugly'], () => {
 });
 
 gulp.task('dist-ugly', () => {
-    return gulp.src('app/styles/main.css')
+    return gulp.src('docs/styles/main.css')
         .pipe($.plumber())
         .pipe($.size())
         .pipe(gulp.dest("dist"));
