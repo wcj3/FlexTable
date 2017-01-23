@@ -8,9 +8,9 @@ border-radius = 7px 7px
 .flextable--description
     margin-top: 3%
 .flextable
-    border-collapse: collapse
     display: flex
-    flex-flow:column
+    flex-flow: row wrap
+    flex: 100%
 .flextable--body
     border-left: 1px solid cell-border
     border-right: 1px solid cell-border
@@ -26,6 +26,7 @@ border-radius = 7px 7px
     background: rgb(62, 62, 65)
 .flextable--body
     border-radius: 0 0 border-radius
+    overflow: hidden
 .flextable--header .flextable--cell, .flextable--body .flextable--cell, .flextable--body-fixed .flextable--cell
     display: flex
     flex: 1
