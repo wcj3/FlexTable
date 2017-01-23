@@ -1,0 +1,26 @@
+{
+  "name": "flextable",
+  "description": "HTML5 Table Solution using FlexBox",
+  "main": [
+    "dist/main.min.css"
+  ],
+  "keywords": [
+    "flexgrid",
+    "html5 table",
+    "flexbox"
+  ],
+  "authors": [
+    "Will Johnson <william.c.johnson92@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+      "docs",
+      ".tmp",
+      "node_modules",
+      "*.js",
+      "*.json",
+      "yarn.lock",
+      ".babelrc",
+      ".gitignore"
+  ]
+}

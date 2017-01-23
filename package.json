@@ -1,7 +1,7 @@
 {
   "name": "flextable",
   "version": "1.0.7",
-  "description": "HTML5 Table Solution using FlexGrid",
+  "description": "HTML5 Table Solution using FlexBox",
   "main": "dist/main.min.css",
   "dependencies": {},
   "devDependencies": {
