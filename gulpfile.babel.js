@@ -42,14 +42,12 @@ gulp.task('serve', ['styles'], () => {
     notify: false,
     port: 9000,
     server: {
-      baseDir: ['.tmp', 'app']
+      baseDir: ['.tmp', 'docs']
   },
   browser: "google chrome"
   });
 
-  gulp.watch([
-    'app/*.html',
-  ]).on('change', reload);
+  gulp.watch(['docs/*.html']).on('change', reload);
 
   gulp.watch('.tmp/styles/**/*.styl', ['styles']);
 });

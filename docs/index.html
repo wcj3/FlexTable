@@ -1,298 +1,304 @@
 <!doctype html>
 <html class="no-js" lang="">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>FlexTable</title>
+    <title>flextable</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+    </style>
 </head>
-
 <body>
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
     <!-- Add your site or application content here -->
-    <p>Basic FlexTable</p>
-    <div class="flexTable">
-        <div class="flexTable--header">
-            <div class="flexTable--row">
-                <div class="flexTable--cell"><span>Column 1</span></div>
-                <div class="flexTable--cell"><span>Column 2</span></div>
-                <div class="flexTable--cell"><span>Super long Column 2, Super long Column 2</span></div>
+    <div class="container">
+        <p class="flextable--description">Basic FlexTable</p>
+        <div class="flextable" data-color="red">
+            <div class="flextable--header">
+                <div class="flextable--row">
+                    <div class="flextable--cell"><span>Column 1</span></div>
+                    <div class="flextable--cell"><span>Column 2</span></div>
+                    <div class="flextable--cell"><span>Super long Column 2, Super long Column 2</span></div>
+                </div>
+            </div>
+            <div class="flextable--body">
+                <div class="flextable--row">
+
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
+                </div>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data"></span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Donec lorem eros, pulvinar vulputate ante vitae, dignissim tempor sapien.</span>
+                    </div>
+                </div>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
+                </div>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
+
+                </div>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Super really long data cell used to test how well this puppy can handle overflows. Why are you still reading?? Seriously, stop.  </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="flexTable--body">
-            <div class="flexTable--row">
+        <p class="flextable--description">Fixed Header FlexTable</p>
+        <div class="flextable" data-color="light-blue">
+            <div class="flextable--header flextable--header-fixed">
+                <div class="flextable--row">
+                    <div class="flextable--cell"><span>Column 1</span></div>
+                    <div class="flextable--cell"><span>Column 2</span></div>
+                    <div class="flextable--cell"><span>Super long Column 2, Super long Column 2</span></div>
+                </div>
+            </div>
+            <div class="flextable--body flextable--body-fixed" data-max-height="3">
+                <div class="flextable--row">
 
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
                 </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data"></span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Donec lorem eros, pulvinar vulputate ante vitae, dignissim tempor sapien.</span>
+                    </div>
                 </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
                 </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data"></span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Donec lorem eros, pulvinar vulputate ante vitae, dignissim tempor sapien.</span>
-                </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
-                </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
-                </div>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
 
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Super really long data cell used to test how well this puppy can handle overflows. Why are you still reading?? Seriously, stop.  </span>
                 </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Super really long data cell used to test how well this puppy can handle overflows. Why are you still reading?? Seriously, stop.  </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
                 </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <p>Fixed Header FlexTable</p>
-    <div class="flexTable">
-        <div class="flexTable--header flexTable--header-fixed">
-            <div class="flexTable--row">
-                <div class="flexTable--cell"><span>Column 1</span></div>
-                <div class="flexTable--cell"><span>Column 2</span></div>
-                <div class="flexTable--cell"><span>Super long Column 2, Super long Column 2</span></div>
-            </div>
-        </div>
-        <div class="flexTable--body-fixed" data-max-height="3">
-            <div class="flexTable--row">
-
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
                 </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
                 </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
                 </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data"></span>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
                 </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
                 </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Donec lorem eros, pulvinar vulputate ante vitae, dignissim tempor sapien.</span>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
                 </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
                 </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
                 </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
                 </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
                 </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
                 </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
-                </div>
-
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Super really long data cell used to test how well this puppy can handle overflows. Why are you still reading?? Seriously, stop.  </span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
-                </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
-                </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
-                </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
-                </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
-                </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
-                </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
-                </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
-                </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
-                </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
-                </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
-                </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
-                </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
-                </div>
-            </div>
-            <div class="flexTable--row">
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Lorem ipsum dolor sit amet, </span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Phasellus iaculis nisi est.</span>
-                </div>
-                <div class="flexTable--cell">
-                    <span class="flexTable--data">Aliquam sit amet tortor sed sapien </span>
+                <div class="flextable--row">
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Phasellus iaculis nisi est.</span>
+                    </div>
+                    <div class="flextable--cell">
+                        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
+                    </div>
                 </div>
             </div>
         </div>
