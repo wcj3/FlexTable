@@ -1,4 +1,4 @@
-# FlexTable (Beta)
+# FlexTable 
 A responsive, lightweight solution to create tables using Flexbox. 
 
 ## Why FlexTable?
