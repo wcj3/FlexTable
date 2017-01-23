@@ -2,11 +2,6 @@
 cell-border = rgba(68, 65, 66, 0.89)
 border-radius = 7px 7px
 // BASIC & DEFAULT flextable STYLING
-
-.flextable--description, .flextable--cell
-    font-family: Tahoma, Arial, Helvetica
-.flextable--description
-    margin-top: 3%
 .flextable
     display: flex
     flex-flow: row wrap
@@ -16,7 +11,9 @@ border-radius = 7px 7px
     border-right: 1px solid cell-border
     border-bottom: 1px solid cell-border
     background-color : rgb(249, 248, 245)
-.flextable--header, .flextable--body, .flextable--body-fixed, .flextable--row
+    display: flex;
+    flex-flow: row nowrap
+.flextable--header, .flextable--body, .flextable--body-fixed
     display: flex
     flex: 100%
     flex-wrap: wrap
@@ -26,24 +23,25 @@ border-radius = 7px 7px
     background: rgb(62, 62, 65)
 .flextable--body
     border-radius: 0 0 border-radius
-    overflow: hidden
-.flextable--header .flextable--cell, .flextable--body .flextable--cell, .flextable--body-fixed .flextable--cell
+    overflow-x: hidden
+.flextable--cell
     display: flex
-    flex: 1
-    overflow: auto
-.flextable--row
+    flex: 1 1
+    overflow-x: hidden
+    font-family: Tahoma, Arial, Helvetica;
+.flextable--body .flextable--cell
+    border-right: 1px solid cell-border
     border-bottom: 1px solid cell-border
-    overflow: hidden
-.flextable--header .flextable--row:only-child
-    border-bottom: none
-.flextable--body .flextable--cell, .flextable--body-fixed .flextable--cell
-    border-left: 1px solid cell-border
-.flextable--body .flextable--row:last-of-type, .flextable--body-fixed .flextable--row:last-of-type
-    border-bottom: none
-.flextable--header .flextable--row .flextable--cell:first-of-type, .flextable--body .flextable--row .flextable--cell:first-of-type, .flextable--body-fixed .flextable--row .flextable--cell:first-of-type
-    border-left: none
-.flextable--header .flextable--row .flextable--cell:last-of-type
+    height: 50px
+    display: flex
+    align-items: center
+    -webkit-text-size-adjust: none
+.flextable--body .flextable--cell:last-of-type
     border-right: none
+.flextable--row
+    display: flex
+    flex: 100%
+    overflow: scroll
 .flextable--header .flextable--cell
     color: white
     font-weight: bold
@@ -54,8 +52,7 @@ border-radius = 7px 7px
 .flextable--data
     white-space: nowrap
     padding: 10px
-    overflow-x: auto;
-    overflow-x: overlay;
+    overflow-x: scroll
 
 /*Helper Styling*/
 
@@ -72,6 +69,7 @@ border-radius = 7px 7px
 //flextable FIXED STYLING
 .flextable--body-fixed[data-max-height='3']
     max-height: 300px
+    -webkit-overflow-scrolling: touch
     overflow-y: scroll !important
     overflow-y: overlay !important
     -ms-overflow-style: -ms-autohiding-scrollbar !important
