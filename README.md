@@ -1,5 +1,5 @@
 # FlexTable 
-A responsive, lightweight solution to create tables using Flexbox. 
+A cross-browser + platform, responsive, lightweight solution to create tables using Flexbox. 
 
 ## Why FlexTable?
 
@@ -62,6 +62,7 @@ Note: Only light-blue, red, & green are supported
  ```
  <div class="flextable" data-color="red">
  ```
+
 
 
 
