@@ -12,6 +12,7 @@ https://wcj3.github.io/FlexTable/
 ## Install
 
 npm install flextable
+
 bower install flextable
 
 ## How to use
