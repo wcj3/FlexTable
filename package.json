@@ -1,6 +1,6 @@
 {
   "name": "flextable",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "HTML5 Table Solution using FlexBox",
   "main": "dist/main.min.css",
   "dependencies": {},
@@ -28,7 +28,7 @@
     "url": "git+https://github.com/wcj3/FlexTable.git"
   },
   "keywords": [
-    "flextable"
+    "flextable, flexbox, flex"
   ],
   "author": "Will Johnson",
   "license": "MIT",

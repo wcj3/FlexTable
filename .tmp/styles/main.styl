@@ -6,52 +6,52 @@ border-radius = 7px 7px
     display: flex
     flex-flow: row wrap
     flex: 100%
-.flextable--body
+.flextable__body
     border-left: 1px solid cell-border
     border-right: 1px solid cell-border
     border-bottom: 1px solid cell-border
     background-color : rgb(249, 248, 245)
     display: flex;
     flex-flow: row nowrap
-.flextable--header, .flextable--body, .flextable--body-fixed
+.flextable__header, .flextable__body, .flextable__body--fixed
     display: flex
     flex: 100%
     flex-wrap: wrap
     font-size: 15px
-.flextable--header
+.flextable__header
     border-radius: border-radius 0 0
     background: rgb(62, 62, 65)
-.flextable--body
+.flextable__body
     border-radius: 0 0 border-radius
     overflow-x: hidden
-.flextable--cell
+.flextable__row > div
     display: flex
     flex: 1 1
     font-family: Tahoma, Arial, Helvetica;
     overflow: hidden;
-.flextable--body .flextable--cell
+.flextable__body .flextable__row > div
     border-right: 1px solid cell-border
     border-bottom: 1px solid cell-border
     height: 50px
     display: flex
     align-items: center
     -webkit-text-size-adjust: none
-.flextable--body .flextable--cell:last-of-type
+.flextable__body .flextable__row > div:last-of-type
     border-right: none
-.flextable--body .flextable--row:last-of-type .flextable--cell
+.flextable__body .flextable__row:last-of-type > div
     border-bottom: none
-.flextable--row
+.flextable__row
     display: flex
     flex: 100%
     overflow: hidden
-.flextable--header .flextable--cell
+.flextable__header .flextable__row > div
     color: white
     font-weight: bold
     padding: 15px 10px
     font-size: 16px
     border-left: 1px solid table-color
     border-bottom: 1px solid table-color
-.flextable--data
+.flextable__row > div > span
     white-space: nowrap
     padding: 10px
     overflow-x: auto;
@@ -59,46 +59,46 @@ border-radius = 7px 7px
 /*Helper Styling*/
 
 //Centers horizontally and vertically
-.flextable--cell-center
+.flextable__cell-center
     align-items: center
     justify-content center
 
 //Add scroll bar for FireFox: Targetting Windows
 @-moz-document url-prefix()
-    .flextable--row .flextable--cell:last-of-type
+    .flextable__row div:last-of-type
         margin-right: 20px;
 
 //flextable FIXED STYLING
-.flextable--body-fixed[data-max-height='3']
+.flextable__body--fixed[data-max-height='3']
     max-height: 300px
     -webkit-overflow-scrolling: touch
     overflow-y: scroll !important
     overflow-y: overlay !important
     -ms-overflow-style: -ms-autohiding-scrollbar !important
-.flextable--body-fixed[data-max-height='4']
+.flextable__body--fixed[data-max-height='4']
     max-height: 400px
     -webkit-overflow-scrolling: touch
     overflow-y: scroll !important
     overflow-y: overlay !important
     -ms-overflow-style: -ms-autohiding-scrollbar !important
-.flextable--body-fixed[data-max-height='5']
+.flextable__body--fixed[data-max-height='5']
     max-height: 500px
     -webkit-overflow-scrolling: touch
     overflow-y: scroll !important
     overflow-y: overlay !important
     -ms-overflow-style: -ms-autohiding-scrollbar !important
-.flextable--body-fixed[data-max-height='6']
+.flextable__body--fixed[data-max-height='6']
     max-height: 600px
     -webkit-overflow-scrolling: touch
     overflow-y: scroll !important
     overflow-y: overlay !important
     -ms-overflow-style: -ms-autohiding-scrollbar !important
-.flextable--fixed .flextable--cell:first-child
+.flextable__fixed .flextable__row > div:first-child
     border-left: 0
 //Colors for table headers
-.flextable[data-color='green']  .flextable--header
+.flextable[data-color='green']  .flextable__header
     background: rgb(45, 179, 114)
-.flextable[data-color='light-blue']  .flextable--header
+.flextable[data-color='light-blue']  .flextable__header
     background: rgb(27, 146, 196)
-.flextable[data-color='red']  .flextable--header
+.flextable[data-color='red']  .flextable__header
     background: rgb(242, 67, 67)

@@ -10,7 +10,7 @@
       -ms-flex: 100%;
           flex: 100%;
 }
-.flextable--body {
+.flextable__body {
   border-left: 1px solid rgba(68,65,66,0.89);
   border-right: 1px solid rgba(68,65,66,0.89);
   border-bottom: 1px solid rgba(68,65,66,0.89);
@@ -23,9 +23,9 @@
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
 }
-.flextable--header,
-.flextable--body,
-.flextable--body-fixed {
+.flextable__header,
+.flextable__body,
+.flextable__body--fixed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,15 +36,15 @@
       flex-wrap: wrap;
   font-size: 15px;
 }
-.flextable--header {
+.flextable__header {
   border-radius: 7px 7px 0 0;
   background: #3e3e41;
 }
-.flextable--body {
+.flextable__body {
   border-radius: 0 0 7px 7px;
   overflow-x: hidden;
 }
-.flextable--cell {
+.flextable__row > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +54,7 @@
   font-family: Tahoma, Arial, Helvetica;
   overflow: hidden;
 }
-.flextable--body .flextable--cell {
+.flextable__body .flextable__row > div {
   border-right: 1px solid rgba(68,65,66,0.89);
   border-bottom: 1px solid rgba(68,65,66,0.89);
   height: 50px;
@@ -66,13 +66,13 @@
           align-items: center;
   -webkit-text-size-adjust: none;
 }
-.flextable--body .flextable--cell:last-of-type {
+.flextable__body .flextable__row > div:last-of-type {
   border-right: none;
 }
-.flextable--body .flextable--row:last-of-type .flextable--cell {
+.flextable__body .flextable__row:last-of-type > div {
   border-bottom: none;
 }
-.flextable--row {
+.flextable__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,7 +81,7 @@
           flex: 100%;
   overflow: hidden;
 }
-.flextable--header .flextable--cell {
+.flextable__header .flextable__row > div {
   color: #fff;
   font-weight: bold;
   padding: 15px 10px;
@@ -89,14 +89,14 @@
   border-left: 1px solid table-color;
   border-bottom: 1px solid table-color;
 }
-.flextable--data {
+.flextable__row > div > span {
   white-space: nowrap;
   padding: 10px;
   overflow-x: auto;
   width: 100%;
 }
 /*Helper Styling*/
-.flextable--cell-center {
+.flextable__cell-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -105,47 +105,47 @@
           justify-content: center;
 }
 @-moz-document url-prefix() {
-  .flextable--row .flextable--cell:last-of-type {
+  .flextable__row div:last-of-type {
     margin-right: 20px;
   }
 }
-.flextable--body-fixed[data-max-height='3'] {
+.flextable__body--fixed[data-max-height='3'] {
   max-height: 300px;
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll !important;
   overflow-y: overlay !important;
   -ms-overflow-style: -ms-autohiding-scrollbar !important;
 }
-.flextable--body-fixed[data-max-height='4'] {
+.flextable__body--fixed[data-max-height='4'] {
   max-height: 400px;
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll !important;
   overflow-y: overlay !important;
   -ms-overflow-style: -ms-autohiding-scrollbar !important;
 }
-.flextable--body-fixed[data-max-height='5'] {
+.flextable__body--fixed[data-max-height='5'] {
   max-height: 500px;
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll !important;
   overflow-y: overlay !important;
   -ms-overflow-style: -ms-autohiding-scrollbar !important;
 }
-.flextable--body-fixed[data-max-height='6'] {
+.flextable__body--fixed[data-max-height='6'] {
   max-height: 600px;
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll !important;
   overflow-y: overlay !important;
   -ms-overflow-style: -ms-autohiding-scrollbar !important;
 }
-.flextable--fixed .flextable--cell:first-child {
+.flextable__fixed .flextable__row > div:first-child {
   border-left: 0;
 }
-.flextable[data-color='green'] .flextable--header {
+.flextable[data-color='green'] .flextable__header {
   background: #2db372;
 }
-.flextable[data-color='light-blue'] .flextable--header {
+.flextable[data-color='light-blue'] .flextable__header {
   background: #1b92c4;
 }
-.flextable[data-color='red'] .flextable--header {
+.flextable[data-color='red'] .flextable__header {
   background: #f24343;
 }

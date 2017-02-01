@@ -1,5 +1,5 @@
-# FlexTable 
-A cross-browser + platform, responsive solution to creating modern tables using Flexbox. 
+# FlexTable
+A cross-browser + platform, responsive solution to creating modern tables using Flexbox.
 
 ## Why FlexTable?
 
@@ -17,43 +17,17 @@ bower install flextable
 
 ## How to use
 
-#### FlexTable with fixed headers and scrollable body
+#### FlexTable expected format
+Each 'flextable__row' class is expected to have the following structure:
 
 ```
-<div class="flextable">
-  <div class="flextable--header flextable--header-fixed">
-    <div class="flextable--row">
-      <div class="flextable--cell"><span>Column 1</span></div>
-      <div class="flextable--cell"><span>Column 2</span></div>
-      <div class="flextable--cell"><span>Super long Column 2, Super long Column 2</span></div>
-    </div>
-  </div>
-  <div class="flextable--body flextable--body-fixed" data-max-height="3">
-    <div class="flextable--row">
-      <div class="flextable--cell">
-        <span class="flextable--data">Lorem ipsum dolor sit amet, </span>
-      </div>
-      <div class="flextable--cell">
-        <span class="flextable--data">Phasellus iaculis nisi est.</span>
-      </div>
-      <div class="flextable--cell">
-        <span class="flextable--data">Aliquam sit amet tortor sed sapien </span>
-      </div>
-    </div>
-   <div class="flextable--row">
-    <div class="flextable--cell">
-      <span class="flextable--data"></span>
-    </div>
-    <div class="flextable--cell">
-      <span class="flextable--data">Phasellus iaculis nisi est.</span>
-    </div>
-    <div class="flextable--cell">
-      <span class="flextable--data">Donec lorem eros, pulvinar vulputate ante vitae, dignissim tempor sapien.</span>
-    </div>
-  </div>            
- </div>
+<div class="flextable__row">
+    <div><span>Column 1</span></div>
+    <div><span>Column 2</span></div>
+    <div><span>Super long Column 2, Super long Column 2</span></div>
 </div>
 ```
+
 #### Setting max-height of body for fixed tables
 Note: Only 3-6 is currently supported
 
@@ -62,9 +36,5 @@ Note: Only 3-6 is currently supported
 #### Select preset color
 Note: Only light-blue, red, & green are supported
  ```
- <div class="flextable" data-color="red">
+
  ```
-
-
-
-
