@@ -17,7 +17,33 @@ bower install flextable
 
 ## How to use
 
-#### FlexTable expected format
+#### Format
+```
+<div class="flextable" data-color="light-blue">
+    <div class="flextable__header flextable__header---fixed">
+        <div class="flextable__row">
+            <div><span>Column 1</span></div>
+            <div><span>Column 2</span></div>
+            <div><span>Super long Column 2, Super long Column 2</span></div>
+        </div>
+    </div>
+    <div class="flextable__body flextable__body--fixed" data-max-height="3">
+        <div class="flextable__row">
+            <div>
+                <span>Lorem ipsum dolor sit amet, </span>
+            </div>
+            <div>
+                <span>Phasellus iaculis nisi est.</span>
+            </div>
+            <div>
+                <span>Aliquam sit amet tortor sed sapien </span>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+##### More on flextable__row class
 Each 'flextable__row' class is expected to have the following structure:
 
 ```
