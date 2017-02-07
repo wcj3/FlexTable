@@ -2,26 +2,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
-}
-.flextable__body {
-  border-left: 1px solid rgba(68,65,66,0.89);
-  border-right: 1px solid rgba(68,65,66,0.89);
-  border-bottom: 1px solid rgba(68,65,66,0.89);
-  background-color: #f9f8f5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  overflow: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 .flextable__header,
 .flextable__body,
@@ -32,17 +19,22 @@
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
+  font-size: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-size: 15px;
 }
 .flextable__header {
   border-radius: 7px 7px 0 0;
   background: #3e3e41;
+  overflow: hidden;
 }
 .flextable__body {
   border-radius: 0 0 7px 7px;
   overflow-x: hidden;
+  border-left: 1px solid rgba(68,65,66,0.89);
+  border-right: 1px solid rgba(68,65,66,0.89);
+  border-bottom: 1px solid rgba(68,65,66,0.89);
+  background-color: #f9f8f5;
 }
 .flextable__row > div {
   display: -webkit-box;
@@ -88,12 +80,19 @@
   font-size: 16px;
   border-left: 1px solid table-color;
   border-bottom: 1px solid table-color;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .flextable__row > div > span {
   white-space: nowrap;
   padding: 10px;
   overflow-x: auto;
   width: 100%;
+  -ms-overflow-style: -ms-autohiding-scrollbar !important;
 }
 /*Helper Styling*/
 .flextable__cell-center {

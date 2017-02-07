@@ -6,24 +6,24 @@ border-radius = 7px 7px
     display: flex
     flex-flow: row wrap
     flex: 100%
+    overflow: auto
+    -ms-overflow-style: -ms-autohiding-scrollbar
+.flextable__header, .flextable__body, .flextable__body--fixed
+    display: flex
+    flex: 100%
+    font-size: 15px
+    flex-wrap: wrap
+.flextable__header
+    border-radius: border-radius 0 0
+    background: rgb(62, 62, 65)
+    overflow: hidden
 .flextable__body
+    border-radius: 0 0 border-radius
+    overflow-x: hidden
     border-left: 1px solid cell-border
     border-right: 1px solid cell-border
     border-bottom: 1px solid cell-border
     background-color : rgb(249, 248, 245)
-    display: flex;
-    flex-flow: row nowrap
-.flextable__header, .flextable__body, .flextable__body--fixed
-    display: flex
-    flex: 100%
-    flex-wrap: wrap
-    font-size: 15px
-.flextable__header
-    border-radius: border-radius 0 0
-    background: rgb(62, 62, 65)
-.flextable__body
-    border-radius: 0 0 border-radius
-    overflow-x: hidden
 .flextable__row > div
     display: flex
     flex: 1 1
@@ -51,11 +51,15 @@ border-radius = 7px 7px
     font-size: 16px
     border-left: 1px solid table-color
     border-bottom: 1px solid table-color
+    display: flex
+    flex: 1
+
 .flextable__row > div > span
     white-space: nowrap
     padding: 10px
     overflow-x: auto;
     width: 100%
+    -ms-overflow-style: -ms-autohiding-scrollbar !important
 /*Helper Styling*/
 
 //Centers horizontally and vertically
