@@ -13,7 +13,7 @@ https://wcj3.github.io/FlexTable/
 
 npm install flextable
 
-bower install flextable
+bower install flextable-css
 
 ## How to use
 
@@ -62,5 +62,5 @@ Note: Only 3-6 is currently supported
 #### Select preset color
 Note: Only light-blue, red, & green are supported
  ```
-
+<div class="flextable" data-color="red">
  ```
