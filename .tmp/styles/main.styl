@@ -1,6 +1,9 @@
 //Stylistic variables
 cell-border = rgba(68, 65, 66, 0.89)
 border-radius = 7px 7px
+table-color = rgb(249, 248, 245)
+header-color = rgba(242, 230, 194, .7)
+text-color = rgb(50, 49, 49)
 // BASIC & DEFAULT flextable STYLING
 .flextable
     display: flex
@@ -8,6 +11,16 @@ border-radius = 7px 7px
     flex: 100%
     overflow: auto
     -ms-overflow-style: -ms-autohiding-scrollbar
+.flextable__row
+    display: flex
+    flex: 100%
+    overflow: hidden
+    border-bottom: 1px solid cell-border
+.flextable__row > div
+    display: flex
+    flex: 1 1
+    font-family: Tahoma, Arial, Helvetica;
+    overflow: hidden;
 .flextable__header, .flextable__body, .flextable__body--fixed
     display: flex
     flex: 100%
@@ -15,51 +28,50 @@ border-radius = 7px 7px
     flex-wrap: wrap
 .flextable__header
     border-radius: border-radius 0 0
-    background: rgb(62, 62, 65)
+    background: header-color
+    color: text-color
     overflow: hidden
+    border: 1px solid
+    border-color: header-color
+.flextable__header .flextable__row
+    border: 1px solid
+    border-color: header-color
 .flextable__body
     border-radius: 0 0 border-radius
     overflow-x: hidden
+    background-color: table-color
     border-left: 1px solid cell-border
     border-right: 1px solid cell-border
     border-bottom: 1px solid cell-border
-    background-color : rgb(249, 248, 245)
-.flextable__row > div
-    display: flex
-    flex: 1 1
-    font-family: Tahoma, Arial, Helvetica;
-    overflow: hidden;
 .flextable__body .flextable__row > div
     border-right: 1px solid cell-border
-    border-bottom: 1px solid cell-border
     height: 50px
     display: flex
     align-items: center
     -webkit-text-size-adjust: none
 .flextable__body .flextable__row > div:last-of-type
     border-right: none
-.flextable__body .flextable__row:last-of-type > div
+.flextable__body .flextable__row:last-of-type
     border-bottom: none
-.flextable__row
-    display: flex
-    flex: 100%
-    overflow: hidden
 .flextable__header .flextable__row > div
-    color: white
+    color: inherit
     font-weight: bold
-    padding: 15px 10px
+    padding: 10px
     font-size: 16px
-    border-left: 1px solid table-color
-    border-bottom: 1px solid table-color
     display: flex
     flex: 1
-
 .flextable__row > div > span
     white-space: nowrap
     padding: 10px
-    overflow-x: auto;
+    overflow-x: auto
     width: 100%
+    color: inherit
     -ms-overflow-style: -ms-autohiding-scrollbar !important
+// No Border styling
+.flextable__body--no_borders .flextable__row > div
+    border: none
+.flextable__body--no_borders .flextable__row
+    border-bottom: 1px solid cell-border
 /*Helper Styling*/
 
 //Centers horizontally and vertically
@@ -102,7 +114,24 @@ border-radius = 7px 7px
 //Colors for table headers
 .flextable[data-color='green']  .flextable__header
     background: rgb(45, 179, 114)
+    color: white
+.flextable[data-color='green']  .flextable__header .flextable__row
+    border-color: rgb(45, 179, 114) !important
 .flextable[data-color='light-blue']  .flextable__header
     background: rgb(27, 146, 196)
+    color: white
+    border-color: rgb(27, 146, 196)
+.flextable[data-color='light-blue']  .flextable__header .flextable__row
+    border-color: rgb(27, 146, 196)
 .flextable[data-color='red']  .flextable__header
     background: rgb(242, 67, 67)
+    color: white
+    border-color: rgb(242, 67, 67)
+.flextable[data-color='red']  .flextable__header .flextable__row
+    border-color: rgb(242, 67, 67)
+.flextable[data-color='orange']  .flextable__header
+    background: rgb(230, 119, 65)
+    color: white
+    border-color: rgb(230, 119, 65)
+.flextable[data-color='orange']  .flextable__header .flextable__row
+    border-color: rgb(230, 119, 65)

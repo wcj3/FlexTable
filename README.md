@@ -13,7 +13,7 @@ https://wcj3.github.io/FlexTable/
 
 npm install flextable
 
-bower install flextable
+bower install flextable | bower install flextable-css
 
 ## How to use
 
@@ -55,12 +55,12 @@ Each 'flextable__row' class is expected to have the following structure:
 ```
 
 #### Setting max-height of body for fixed tables
-Note: Only 3-6 is currently supported
+Note: Only 3-6 is currently supported (300-600px)
 
 .flextable--body-fixed[data-max-height='5']
 
 #### Select preset color
 Note: Only light-blue, red, & green are supported
  ```
-
+ <div class="flextable" data-color="red">
  ```
