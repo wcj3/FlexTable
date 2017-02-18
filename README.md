@@ -62,5 +62,5 @@ Note: Only 3-6 is currently supported (300-600px)
 #### Select preset color
 Note: Only light-blue, red, & green are supported
  ```
- <div class="flextable" data-color="red">
+<div class="flextable" data-color="red">
  ```
