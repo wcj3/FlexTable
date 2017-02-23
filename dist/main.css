@@ -48,9 +48,9 @@
   background: #f0e9d4;
   color: #363434;
   overflow: hidden;
-  border-top: 1px solid #a7a4a4;
-  border-left: 1px solid #a7a4a4;
-  border-right: 1px solid #a7a4a4;
+  border-top: 1px solid inherit;
+  border-left: 1px solid inherit;
+  border-right: 1px solid inherit;
 }
 .flextable__header .flextable__row {
   border: 1px solid;
