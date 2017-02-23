@@ -1,6 +1,6 @@
 {
   "name": "flextable",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "HTML5 Table Solution using FlexBox",
   "main": "dist/main.min.css",
   "dependencies": {},

@@ -19,7 +19,7 @@ gulp.task('styles', () => {
 
 
 
-gulp.task('dist', ['dist-ugly'], () => {
+gulp.task('build', ['dist-ugly'], () => {
     return gulp.src('docs/styles/main.css')
         .pipe($.plumber())
         .pipe($.cleanCss())

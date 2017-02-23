@@ -1,9 +1,9 @@
 //Stylistic variables
-cell-border = rgba(68, 65, 66, 0.89)
+cell-border = rgb(167, 164, 164)
 border-radius = 7px 7px
-table-color = rgb(249, 248, 245)
-header-color = rgba(242, 230, 194, .7)
-text-color = rgb(50, 49, 49)
+table-color = rgb(255, 255, 255)
+header-color = rgb(240, 233, 212)
+text-color = rgb(54, 52, 52)
 // BASIC & DEFAULT flextable STYLING
 .flextable
     display: flex
@@ -31,8 +31,9 @@ text-color = rgb(50, 49, 49)
     background: header-color
     color: text-color
     overflow: hidden
-    border: 1px solid
-    border-color: header-color
+    border-top: 1px solid cell-border
+    border-left: 1px solid cell-border
+    border-right: 1px solid cell-border
 .flextable__header .flextable__row
     border: 1px solid
     border-color: header-color
