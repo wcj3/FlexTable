@@ -57,10 +57,13 @@ text-color = rgb(54, 52, 52)
 .flextable__header .flextable__row > div
     color: inherit
     font-weight: bold
-    padding: 10px
+    padding-top: 15px
+    padding-bottom: 10px
     font-size: 16px
     display: flex
     flex: 1
+.flextable__header .flextable__row > div:not(:last-of-type),.flextable__body--no_borders .flextable__row > div:not(:last-of-type)
+    margin-right: 10px
 .flextable__row > div > span
     white-space: nowrap
     padding: 10px
