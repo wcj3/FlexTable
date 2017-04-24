@@ -84,8 +84,8 @@
 .flextable__header .flextable__row > div {
   color: inherit;
   font-weight: bold;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;

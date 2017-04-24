@@ -1,6 +1,6 @@
 {
   "name": "flextable",
-  "version": "2.0.5",
+  "version": "2.0.7",
   "description": "HTML5 Table Solution using FlexBox",
   "main": "dist/main.min.css",
   "dependencies": {},
@@ -21,6 +21,7 @@
     "stylus": "^0.54.2"
   },
   "scripts": {
+    "start": "gulp serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
